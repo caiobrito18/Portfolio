@@ -7,6 +7,7 @@
   line-height: 24px;
   font-weight: 400;
 
+  box-sizing: border-box;
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #11002c;
@@ -22,4 +23,17 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+body,html{
+  height:100vh;
+  width:100vw;
+}
+#root {
+  margin: 0 auto;
+  padding: 0rem;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
