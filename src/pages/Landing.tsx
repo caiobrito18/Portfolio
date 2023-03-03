@@ -1,6 +1,8 @@
+import { Divider } from "@mui/material";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { MouseEvent, useState } from "react";
-import { Sections } from "../styles/landing";
+import WhoAmI from "../Components/WhoAmI";
+import { Main, Sections } from "../styles/landing";
 
 const Landing = () => {
   const [ mouseIn, seMouseIn ] = useState(false);
@@ -13,7 +15,8 @@ const Landing = () => {
   }
 
   return (
-    <div className='flex h-[100vh] w-full justify-evenly items-center'>
+    <Main className="absolute overflow-hidden">
+    <div className='flex h-[100vh] w-full justify-evenly items-center relative'>
       <Sections onMouseEnter={hide} onMouseLeave={hide}>
         <div className='flex'>
           <ChevronRight color="white"/>
@@ -82,7 +85,12 @@ const Landing = () => {
         </div>
       
       </Sections>
+      <Divider/>
     </div>
+    <div className='flex h-screen w-full relative'>
+      <WhoAmI/>
+    </div>
+    </Main>
   )
 }
 

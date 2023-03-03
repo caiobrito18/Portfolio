@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+export const Main = styled.div`
+max-width:100%;
+`;
 export const Sections = styled.div`
   display: flex;
   flex:1;
@@ -12,7 +15,7 @@ export const Sections = styled.div`
   min-height:100%;
   
   :hover{
-    box-shadow: inset 0 0 75px #11002c;
+    box-shadow: inset 0 0 75px #420069;
     transition: ease-in-out 0.15s all;
   }
 `;
