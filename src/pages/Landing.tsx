@@ -33,9 +33,9 @@ const Landing = () => {
             About
           </h1>
           </div>
-          <h2>Who am I?</h2>
-          <h2>What do I know?</h2>
-          <h2>Recommendations</h2>
+          <a href="/whoami" className="block">Who am I?</a>
+          <a className="block">What do I know?</a>
+          <a className="block">Recommendations</a>
         </div>
       
       </Sections>
